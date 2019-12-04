@@ -12,8 +12,8 @@ if (lowerCaseUsername === 'blandine') {
 
 var myname = prompt('Do you know my name?');
 console.log('user says ' + myname);
-var lowerCasemyname = myname.toLowerCase();
-if ( lowerCasemyname === 'yes') {
+var lowerCaseMyname = myname.toLowerCase();
+if ( lowerCaseMyname === 'yes') {
   alert('Great job ' + username);
 } else {
   alert('Please, ask me ' + username);
@@ -30,8 +30,8 @@ if ( lowerCaselive === 'yes') {
 
 var create = prompt('Can you create a website?');
 console.log('user say ' + create);
-var lowerCasecreate = live.toLowerCase();
-if ( lowerCasecreate === 'yes') {
+var lowerCaseCreate = live.toLowerCase();
+if ( lowerCaseCreate === 'yes') {
   alert('Great ' + username );
 } else {
   alert('Go to code fellows, they will teach you' );
@@ -48,8 +48,8 @@ if ( lowerCasesite === 'yes') {
 
 var comment = prompt('do you want to live a comment?');
 console.log('user says ' + comment);
-var lowerCasecomment = comment.toLowerCase();
-if ( lowerCasecomment === 'yes') {
+var lowerCaseComment = comment.toLowerCase();
+if ( lowerCaseComment === 'yes') {
   alert('Be nice ' + username);
 } else {
   alert('Your comment will help ' + username + ' ,Thanks');
