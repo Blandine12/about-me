@@ -1,0 +1,21 @@
+p { 
+margin: 200px;
+color: blue;
+}
+
+h1 {
+  text-align: center; color: rgb(168, 146, 57);
+  font-size: 40px;
+}
+
+img {
+  width: 100px;
+  height: auto;
+  float: left;
+  margin: 50px;
+}
+
+nav {
+  float: left;
+  margin: 80px;
+}
