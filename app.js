@@ -55,3 +55,64 @@ if ( lowerCaseComment === 'yes') {
   alert('Your comment will help ' + username + ' ,Thanks');
 }
 
+// get help Andrew
+var ageGuess = prompt('How old I am?');
+var ageAnswer = Math.ceil( Math.random() * 33);
+for ( var i = 0; i < 4; i++) {
+
+  if (ageGuess < ageAnswer) {
+    ageGuess = prompt('too high');
+  } else if ( ageGuess > ageAnswer) {
+    ageAnswer = prompt('too low');
+  } else {
+    alert ('Correct');
+    // score++;
+    i = 4;
+  }
+}
+
+
+
+
+
+
+
+
+// var kidGuess = prompt('How many kid do I  have?');
+// var kidAnswer = 2;
+
+// if (kidGuess > kidAnswer) {
+//   alert('too high');
+// } if ( kidGuess < kidAnswer); {
+//   alert('too low');
+// }
+
+
+// var agekidGuess = prompt('How old are my kids?');
+// var agekidAnswer = 7;
+
+// if (agekidGuess > agekidAnswer) {
+//   alert('too high');
+// } if ( agekidGuess < agekidAnswer); {
+//   alert('too low');
+// }
+
+
+// var carGuess = prompt('How many car do I have?');
+// var carAnswer = 1;
+
+// if (carGuess > carAnswer) {
+//   alert('too high');
+// } if ( carGuess < carAnswer); {
+//   alert('too low');
+// }
+
+
+// var serveGuess = prompt('How long do I serve?');
+// var serveAnswer = 3;
+
+// if (serveGuess > serveAnswer) {
+//   alert('too high');
+// } if ( serveGuess < serveAnswer); {
+//   alert('too low');
+// }
