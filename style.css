@@ -23,3 +23,12 @@ nav {
 li {
   text-decoration: ;
 }
+ol { 
+  list-style-type: decimal;
+  margin-left: 40px;
+}
+
+ul {
+  list-style-type: decimal;
+  margin-right: 40px;
+}

@@ -1,4 +1,6 @@
 'use strict';
+
+var score = 0;
 var username = prompt( 'Tell me your name!');
 console.log('user\'s name was ' + username);
 
@@ -17,6 +19,7 @@ if ( lowerCaseMyname === 'yes') {
   alert('Great job ' + username);
 } else {
   alert('Please, ask me ' + username);
+  score ++;
 }
 
 var live = prompt('Do you live seattle?');
@@ -26,6 +29,7 @@ if ( lowerCaselive === 'yes') {
   alert('seattle is beautitful');
 } else {
   alert('Good for you ' + username + ' , seattle is hilly');
+  score ++;
 }
 
 var create = prompt('Can you create a website?');
@@ -35,6 +39,7 @@ if ( lowerCaseCreate === 'yes') {
   alert('Great ' + username );
 } else {
   alert('Go to code fellows, they will teach you' );
+  score ++;
 }
 
 var site = prompt('Do want to see my site?');
@@ -44,6 +49,7 @@ if ( lowerCasesite === 'yes') {
   alert('Thanks ' + username);
 } else {
   alert('I will show you anyway ' + username);
+  score ++;
 }
 
 var comment = prompt('do you want to live a comment?');
@@ -53,11 +59,12 @@ if ( lowerCaseComment === 'yes') {
   alert('Be nice ' + username);
 } else {
   alert('Your comment will help ' + username + ' ,Thanks');
+  score ++;
 }
 
 // get help Andrew
 var ageGuess = prompt('How old I am?');
-var ageAnswer = Math.ceil( Math.random() * 33);
+var ageAnswer = 33;
 for ( var i = 0; i < 4; i++) {
 
   if (ageGuess < ageAnswer) {
@@ -66,7 +73,7 @@ for ( var i = 0; i < 4; i++) {
     ageAnswer = prompt('too low');
   } else {
     alert ('Correct');
-    // score++;
+    score ++;
     i = 4;
   }
 }
@@ -74,7 +81,7 @@ for ( var i = 0; i < 4; i++) {
 
 
 
-
+alert ( ' You got ' + score + ' out of 6 questios!');
 
 
 
