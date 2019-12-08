@@ -75,7 +75,7 @@ function commentFun() {
 }
 
 function ageGuessFun() {
-  // get help Andrew
+
   var ageGuess = parseInt(prompt('How old I am?'));
   var ageAnswer = 33;
   for ( var i = 0; i < 4; i++) {
@@ -93,6 +93,18 @@ function ageGuessFun() {
   }
 }
 
+function guest() {
+  var state = prompt(' What is the last state i live in?');
+  var stateAnswer = ['Dallas','Texas', 'Missouri', 'New York', 'Kansa', 'Maryland'];
+
+  for( var i = 0; i < stateAnswer.length; i = i + 1) {
+    if( state !== stateAnswer[i]) { stateAnswer = prompt('I never live in there, I might visite one day.');
+    } else if ( state === stateAnswer[i]) { stateAnswer = prompt( 'I love Maryland ' );}
+    i = stateAnswer.length;
+    score++;
+  }
+}
+
 
 function scoreFun() {
   alert ( ' You got ' + score + ' out of 6 questios!');
@@ -106,6 +118,5 @@ function questions() {
   commentFun();
   ageGuessFun();
   scoreFun();
+  guest();
 }
-
-
