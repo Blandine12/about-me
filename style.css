@@ -27,7 +27,7 @@ nav {
 }
 
 li {
-  text-decoration: ;
+  text-decoration: blue;
 }
 ol { 
   list-style-type: decimal;
@@ -43,6 +43,11 @@ body {
   margin: 20px 35px;
   padding: 5px;
   border: 2px dotted blue;
-  background-color: rgb(168, 146, 57);
+  background-color: lightpink;
 
+}
+footer {
+  margin: 20px 10px;
+  padding: 2px;
+  text-align: center;
 }

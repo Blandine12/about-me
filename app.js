@@ -27,7 +27,7 @@ function myNameFun() {
 }
 
 function liveFun() {
-  var live = prompt('Do you live seattle?');
+  var live = prompt('Do you live in seattle?');
 
   var lowerCaselive = live.toLowerCase();
   if ( lowerCaselive === 'yes' || lowerCaselive === 'y') {
@@ -94,16 +94,23 @@ function ageGuessFun() {
 }
 
 function guest() {
-  var state = prompt(' What is the last state i live in?');
-  var stateAnswer = ['Dallas','Texas', 'Missouri', 'New York', 'Kansa', 'Maryland'];
 
-  for( var i = 0; i < stateAnswer.length; i = i + 1) {
-    if( state !== stateAnswer[i]) { stateAnswer = prompt('I never live in there, I might visite one day.');
-    } else if ( state === stateAnswer[i]) { stateAnswer = prompt( 'I love Maryland ' );}
-    i = stateAnswer.length;
+  var stateAnswer = ['Dallas ', 'Texas ', 'Missouri ', 'New York ', 'Kansa ', 'Maryland '];
+
+  var state = prompt('Can you guest which state I came from. ');
+  alert('what is my favorite state ');
+  state = prompt('PLease choose one between ' + stateAnswer);
+  for( var i = 0; i < 6; i = i + 1) {
+    if( state !== stateAnswer[i]) { alert('I never live there, I might visite one day.');
+    } else if ( state === stateAnswer[i]) { alert( 'I love Maryland ' );
+      state = prompt('Try Maryland');
+    } else {
+      alert( 'try again');}
+    i = 6;
     score++;
   }
 }
+
 
 
 function scoreFun() {
@@ -117,6 +124,6 @@ function questions() {
   siteFun();
   commentFun();
   ageGuessFun();
-  scoreFun();
   guest();
+  scoreFun();
 }
