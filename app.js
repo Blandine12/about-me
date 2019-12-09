@@ -95,18 +95,18 @@ function ageGuessFun() {
 
 function guest() {
 
-  var stateAnswer = ['Dallas ', 'Texas ', 'Missouri ', 'New York ', 'Kansa ', 'Maryland '];
+  var stateAnswer = ['Dallas', 'Texas', 'Missouri', 'New York', 'Kansas', 'Maryland'];
 
-  var state = prompt('Can you guest which state I came from. ');
-  alert('what is my favorite state ');
-  state = prompt('PLease choose one between ' + stateAnswer);
+  var state = prompt('Can you guest a state I\'ve visited?');
+
   for( var i = 0; i < 6; i = i + 1) {
-    if( state !== stateAnswer[i]) { alert('I never live there, I might visite one day.');
-    } else if ( state === stateAnswer[i]) { alert( 'I love Maryland ' );
-      state = prompt('Try Maryland');
+    if( state !== stateAnswer[i]) {
+      alert('I never live there, I might visite one day.');
+    } else if ( state === stateAnswer[i]) {
+      alert( `Yes, ${state} is one of my favorites I visited.`);
+      i = 6;
     } else {
-      alert( 'try again');}
-    i = 6;
+      alert( 'Try again');}
     score++;
   }
 }
